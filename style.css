@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  /* background: linear-gradient(135deg, #ff9a9e, #fad0c4); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.card {
+  width: 350px;
+  /* background: #fad0c4; */
+  border-radius: 15px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-header {
+  background: #f76c6c;
+  color: white;
+  padding: 20px;
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* .photo-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+  border: 4px solid #f76c6c;
+  background-image: url(IMG-20241219-WA0008.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+} */
+/* .photo-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+  border: 4px solid #f76c6c;
+  position: relative;
+}
+
+.photo-container::before,
+.photo-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 2.5s ease-in-out;
+}
+
+.photo-container::before {
+  background-image: url("WhatsApp\ Image\ 2024-12-19\ at\ 19.11.57.jpeg");
+  opacity: 1;
+  animation: fadeSmooth 5s infinite;
+}
+
+.photo-container::after {
+  background-image: url("WhatsApp\ Image\ 2024-12-19\ at\ 19.12.36.jpeg");
+  opacity: 0;
+  animation: fadeSmoothReverse 5s infinite;
+}
+
+@keyframes fadeSmooth {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeSmoothReverse {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.photo-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+  border: 4px solid #f76c6c;
+  background-size: cover;
+  background-position: center;
+  animation: backgroundAnimation 9s infinite ease-in-out;
+}
+
+@keyframes backgroundAnimation {
+  0%,
+  40% {
+    background-image: url("WhatsApp\ Image\ 2024-12-19\ at\ 19.11.57.jpeg");
+  }
+  60%,
+  100% {
+    background-image: url("WhatsApp\ Image\ 2024-12-19\ at\ 19.12.36.jpeg");
+  }
+}
+
+/* .photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.name {
+  font-size: 20px;
+  color: #333;
+  font-weight: lighter;
+}
+
+.date {
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0 15px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  font-size: 24px;
+  color: #f76c6c;
+  cursor: pointer;
+}
+
+.message {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #999;
+}
+
+.typing {
+  font-size: 18px;
+  color: #f76c6c;
+  margin-top: 20px;
+  font-family: "Pacifico", cursive;
+  white-space: normal;
+  overflow: hidden;
+  border-right: 2px solid #f76c6c;
+  display: inline-block;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+audio {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.wishes {
+  margin-top: 20px;
+  background: #ffe4e1;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wishes h3 {
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  color: #f76c6c;
+  font-size: 20px;
+}
+
+.wishes p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+}
+
+.wishes i {
+  margin-right: 8px;
+  color: #f76c6c;
+  cursor: pointer;
+}
+
+.celebrate-button {
+  margin-top: 20px;
+  background: #f76c6c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Pacifico", cursive;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.celebrate-button:hover {
+  background: #ff4a4a;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  animation: fall 4s infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.firework {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  animation: explode 1.5s ease-out infinite;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
